@@ -19,8 +19,12 @@ chrome.contextMenus.create({
   id: "SciHub",
   title: "Open Link on SciHub…",
   type: "normal",
-  contexts: ["link", "selection", "tabs"]
-  //contexts: ["link", "selection"]
+  contexts:
+  [
+    "link",
+    "selection",
+//    "tabs"
+  ]
 });
 
 chrome.contextMenus.onClicked.addListener
