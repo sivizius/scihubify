@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "scihubify",
-  "version": "2.0",
+  "version": "2.1",
 
   "description": "Open Links on Sci-Hub, search for selected text on Sci-Hub.",
 
@@ -15,12 +15,16 @@
   "permissions":
   [
     "activeTab",
-    "menus"
+    "contextMenus",
+    "storage"
   ],
 
   "background":
   {
-    "scripts": [ "index.js" ]
+    "scripts":
+    [
+      "index.js"
+    ]
   },
 
   "browser_action":

@@ -15,15 +15,15 @@ if ( Array.isArray(localStorage.getItem("sciHubDomainList" )) === false )
   localStorage.setItem("sciHubDomain",     sciHubDomainList[0]);
 }
 
-browser.menus.create
-({
+chrome.contextMenus.create({
   id: "SciHub",
-  title: "Open Link on SciHub",
+  title: "Open Link on SciHub…",
   type: "normal",
-  contexts: ["link", "selection", "tab"]
+  //contexts: ["link", "selection", "tabs"]
+  contexts: ["link", "selection"]
 });
 
-browser.menus.onClicked.addListener
+chrome.contextMenus.onClicked.addListener
 (
   function(info, tab)
   {
@@ -46,7 +46,7 @@ browser.menus.onClicked.addListener
       if ( sciurl !== undefined )
       {
         sciurl = "http://" + sciHubDomain + "/" + sciurl;
-        browser.tabs.create
+        chrome.tabs.create
         (
           {
             url: sciurl
