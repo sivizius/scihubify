@@ -21,6 +21,7 @@ for (let i = 0; i < classname.length; i++)
     (event) =>
     {
       localStorage.setItem("sciHubDomain", event.target.textContent);
+      window.close();
     }
   );
 }
