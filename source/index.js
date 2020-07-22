@@ -1,12 +1,12 @@
 let sciHubDomainList =
 [
-  "sci-hub.is",
-  "sci-hub.tw",
-  "sci-hub.se",
-  "sci-hub.win",
-  "sci-hub.bz",
-  "sci-hub.cc",
-  "sci-hub.io",
+  "sci-hub.ren",
+  "sci-hub.pl",
+  "scihub.wikicn.top",
+  "www.sci-hub.is",
+  "www.sci-hub.se",
+  "www.sci-hub.tw",
+  "www.scihubtw.tw",
   "scihub22266oqcxt.onion"
 ];
 if ( Array.isArray(localStorage.getItem("sciHubDomainList" )) === false )
@@ -48,7 +48,7 @@ chrome.contextMenus.onClicked.addListener
       }
       if ( sciurl !== undefined )
       {
-        sciurl = "http://" + sciHubDomain + "/" + sciurl;
+        sciurl = "https://" + sciHubDomain + "/" + sciurl;
         chrome.tabs.create
         (
           {

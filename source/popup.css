@@ -1,0 +1,37 @@
+html, body
+{
+  background:                           #000;
+}
+
+.button
+{
+  color:                                #f80;
+  cursor:                               pointer;
+  font-size:                            12px;
+  margin:                               0% auto;
+  padding:                              4px;
+  text-align:                           center;
+}
+
+.button:hover
+{
+  color:                                #008;
+}
+
+#popup-title
+{
+  color:                                #08f;
+  font-size:                            16px;
+  margin:                               0% auto;
+  padding:                              4px;
+  text-align:                           center;
+}
+
+#popup-text
+{
+  color:                                #08f;
+  font-size:                            10px;
+  margin:                               0% auto;
+  padding:                              4px;
+  text-align:                           left;
+}

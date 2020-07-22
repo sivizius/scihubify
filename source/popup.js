@@ -1,5 +1,6 @@
 let popup = document.getElementById("popup-content");
 let sciHubDomainList = JSON.parse(localStorage.getItem("sciHubDomainList"));
+
 sciHubDomainList.forEach
 (
   function(value)
