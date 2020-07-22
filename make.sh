@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 rm $(find | grep -P "(\.xpi|\.crx|~)$" )
 zip -r -FS ../scihubify.zip *

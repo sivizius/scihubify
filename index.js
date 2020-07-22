@@ -22,8 +22,7 @@ chrome.contextMenus.create({
   contexts:
   [
     "link",
-    "selection",
-//    "tabs"
+    "selection"
   ]
 });
 
